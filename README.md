@@ -1,4 +1,5 @@
-# Reachable — Stage 0: imagery acquisition and caching
+# Reachable — Stage 0: imagery acquisition and caching 
+
 
 Fetches Mapillary street-level imagery for a study area, verifies it, and
 caches it partitioned by sequence for Stage 1 onward.
