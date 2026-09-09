@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "area": "wl_residential_north",
+  "bbox": "-86.929,40.438,-86.911,40.452",
+  "area_km2": 2.371,
+  "created_at": "2026-08-30T05:02:21+00:00",
+  "source": {
+    "provider": "Mapillary",
+    "api": "graph.mapillary.com/images",
+    "license": "CC BY-SA 4.0",
+    "attribution_required": true,
+    "attribution_note": "Display the Mapillary logo with a link to mapillary.com wherever data extracted via the API is integrated.",
+    "privacy_note": "Mapillary blurs faces and licence plates before publication. No additional PII is stored by this pipeline."
+  },
+  "counts": {
+    "images": 50,
+    "sequences": 6,
+    "bytes": 16189980
+  },
+  "sequences": {
+    "0ewsm2wuazulc6xdw3uwdj": {
+      "n_images": 14,
+      "metadata_key": "metadata/seq=0ewsm2wuazulc6xdw3uwdj/images.jsonl"
+    },
+    "8CJ6DkLzdKUjuGmsmBub3g": {
+      "n_images": 5,
+      "metadata_key": "metadata/seq=8CJ6DkLzdKUjuGmsmBub3g/images.jsonl"
+    },
+    "JV_TyH_ICvPk9V5HNj_fgA": {
+      "n_images": 3,
+      "metadata_key": "metadata/seq=JV_TyH_ICvPk9V5HNj_fgA/images.jsonl"
+    },
+    "dim3kHHBsKjhvJezzFxptw": {
+      "n_images": 15,
+      "metadata_key": "metadata/seq=dim3kHHBsKjhvJezzFxptw/images.jsonl"
+    },
+    "ll6pz4xnoues197qbycrxt": {
+      "n_images": 8,
+      "metadata_key": "metadata/seq=ll6pz4xnoues197qbycrxt/images.jsonl"
+    },
+    "xweddrfjASlbyCXnG8bmjw": {
+      "n_images": 5,
+      "metadata_key": "metadata/seq=xweddrfjASlbyCXnG8bmjw/images.jsonl"
+    }
+  },
+  "ingest_stats": {
+    "started_at": "2026-08-30T05:02:13+00:00",
+    "finished_at": "2026-08-30T05:02:21+00:00",
+    "metadata_records": 50,
+    "already_cached": 0,
+    "downloaded": 50,
+    "failed": 0,
+    "corrupt": 0,
+    "no_url": 0,
+    "bytes_downloaded": 16189980,
+    "sequences": 6,
+    "failures": []
+  },
+  "api_stats": {
+    "requests": 54,
+    "retries": 0
+  }
+}

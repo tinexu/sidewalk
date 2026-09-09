@@ -1,0 +1,21 @@
+{
+    "_comment": [
+      "Candidate study areas, format: west,south,east,north in WGS84 degrees.",
+      "These are starting estimates centred on plausible neighbourhoods. Before",
+      "running the survey, open https://www.mapillary.com/app and pan over each",
+      "one to sanity-check that the box covers what you think it covers, then",
+      "adjust. Each box below is roughly 1.5 x 1.5 km (about 2.3 km^2), which is",
+      "4 API tiles at the 0.009-degree tile size.",
+      "",
+      "Selection logic: campus_core has the densest pedestrian traffic and the",
+      "highest chance of existing Mapillary coverage. wl_residential_north is the",
+      "one most likely to reveal real barriers, because postwar residential",
+      "streets are where curb ramps were never retrofitted. Survey both."
+    ],
+    "areas": {
+      "campus_core": "-86.9302,40.4167,-86.9122,40.4307",
+      "chauncey_village": "-86.9150,40.4175,-86.8970,40.4315",
+      "wl_residential_north": "-86.9290,40.4380,-86.9110,40.4520",
+      "downtown_lafayette": "-86.8843,40.4097,-86.8663,40.4237"
+    }
+  }

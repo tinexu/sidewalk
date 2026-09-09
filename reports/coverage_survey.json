@@ -1,0 +1,153 @@
+[
+  {
+    "area_name": "campus_core",
+    "bbox_param": "-86.9302,40.4167,-86.9122,40.4307",
+    "area_km2": 2.372,
+    "tiles_queried": 4,
+    "total_images": 2004,
+    "usable_images": 2004,
+    "pano_images": 0,
+    "low_res_images": 0,
+    "no_sequence_images": 0,
+    "no_position_images": 0,
+    "total_sequences": 71,
+    "long_sequences": 19,
+    "sequence_length_median": 1,
+    "sequence_length_max": 680,
+    "baseline_median_m": 8.54,
+    "baseline_p10_m": 3.48,
+    "baseline_p90_m": 13.33,
+    "good_baseline_fraction": 0.622,
+    "capture_years": {
+      "2015": 60,
+      "2016": 12,
+      "2020": 680,
+      "2021": 1225,
+      "2025": 27
+    },
+    "median_age_years": 5.49,
+    "newest_capture": "2025-04-18",
+    "camera_types": {
+      "perspective": 2004
+    },
+    "images_per_km2": 844.9,
+    "est_download_gb": 0.88,
+    "verdict": "NO-GO",
+    "reasons": [
+      "Only 19 sequences of >=5 frames (need >= 20). Stage 3 needs multi-view runs."
+    ]
+  },
+  {
+    "area_name": "chauncey_village",
+    "bbox_param": "-86.915,40.4175,-86.897,40.4315",
+    "area_km2": 2.372,
+    "tiles_queried": 4,
+    "total_images": 4067,
+    "usable_images": 4067,
+    "pano_images": 0,
+    "low_res_images": 0,
+    "no_sequence_images": 0,
+    "no_position_images": 0,
+    "total_sequences": 132,
+    "long_sequences": 62,
+    "sequence_length_median": 4.0,
+    "sequence_length_max": 643,
+    "baseline_median_m": 8.63,
+    "baseline_p10_m": 2.79,
+    "baseline_p90_m": 20.35,
+    "good_baseline_fraction": 0.559,
+    "capture_years": {
+      "2015": 751,
+      "2016": 21,
+      "2018": 434,
+      "2020": 828,
+      "2021": 1962,
+      "2024": 3,
+      "2025": 68
+    },
+    "median_age_years": 5.83,
+    "newest_capture": "2025-04-18",
+    "camera_types": {
+      "perspective": 4067
+    },
+    "images_per_km2": 1714.6,
+    "est_download_gb": 1.79,
+    "verdict": "GO",
+    "reasons": []
+  },
+  {
+    "area_name": "wl_residential_north",
+    "bbox_param": "-86.929,40.438,-86.911,40.452",
+    "area_km2": 2.371,
+    "tiles_queried": 4,
+    "total_images": 1120,
+    "usable_images": 1120,
+    "pano_images": 0,
+    "low_res_images": 0,
+    "no_sequence_images": 0,
+    "no_position_images": 0,
+    "total_sequences": 18,
+    "long_sequences": 16,
+    "sequence_length_median": 28.0,
+    "sequence_length_max": 328,
+    "baseline_median_m": 4.97,
+    "baseline_p10_m": 3.25,
+    "baseline_p90_m": 30.03,
+    "good_baseline_fraction": 0.584,
+    "capture_years": {
+      "2015": 253,
+      "2016": 102,
+      "2018": 541,
+      "2021": 224
+    },
+    "median_age_years": 8.13,
+    "newest_capture": "2021-03-03",
+    "camera_types": {
+      "perspective": 907,
+      "unknown": 213
+    },
+    "images_per_km2": 472.4,
+    "est_download_gb": 0.49,
+    "verdict": "NO-GO",
+    "reasons": [
+      "Only 16 sequences of >=5 frames (need >= 20). Stage 3 needs multi-view runs.",
+      "Median imagery age 8.13 years. Findings may not reflect current construction; check newest capture per corner before reporting a barrier."
+    ]
+  },
+  {
+    "area_name": "downtown_lafayette",
+    "bbox_param": "-86.8843,40.4097,-86.8663,40.4237",
+    "area_km2": 2.372,
+    "tiles_queried": 4,
+    "total_images": 790,
+    "usable_images": 790,
+    "pano_images": 0,
+    "low_res_images": 0,
+    "no_sequence_images": 0,
+    "no_position_images": 0,
+    "total_sequences": 6,
+    "long_sequences": 6,
+    "sequence_length_median": 125.0,
+    "sequence_length_max": 319,
+    "baseline_median_m": 10.86,
+    "baseline_p10_m": 3.26,
+    "baseline_p90_m": 15.27,
+    "good_baseline_fraction": 0.393,
+    "capture_years": {
+      "2020": 127,
+      "2021": 663
+    },
+    "median_age_years": 5.33,
+    "newest_capture": "2021-04-30",
+    "camera_types": {
+      "perspective": 790
+    },
+    "images_per_km2": 333.1,
+    "est_download_gb": 0.35,
+    "verdict": "NO-GO",
+    "reasons": [
+      "Only 6 sequences of >=5 frames (need >= 20). Stage 3 needs multi-view runs.",
+      "Median baseline 10.86 m is long; expect matching failures on low-texture surfaces."
+    ]
+  }
+]

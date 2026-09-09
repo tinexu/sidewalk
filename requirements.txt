@@ -1,0 +1,34 @@
+# Stage 0 (ingest) dependencies, fully pinned.
+#
+# The competition requires pinned dependencies plus working build/deploy/test
+# instructions, and the reproducibility check in week 9 runs against exactly
+# this file on a clean machine. Do not loosen these pins.
+#
+# Versions below are what Stage 0 was developed and tested against.
+# Regenerate with: pip freeze > requirements.lock.txt
+
+requests==2.33.1
+boto3==1.43.83
+botocore==1.43.83
+pillow==12.1.1
+numpy==2.4.4
+
+# Test-only. Split into requirements-dev.txt if the runtime container needs to
+# stay lean; for now the Batch image is not size-constrained.
+pytest==9.1.1
+
+# NOT pinned here on purpose:
+#
+#   opencv-python / opencv-contrib-python
+#     Stage 0 does no image analysis -- it fetches bytes and decode-verifies
+#     with Pillow. OpenCV 5 arrives with Stage 1 (frame triage). It is pinned
+#     in the Stage 1 requirements, and on the Arm path it is replaced by the
+#     COOL build from AWS Marketplace rather than a PyPI wheel. Pinning a PyPI
+#     OpenCV here would shadow COOL in the Graviton container and quietly
+#     invalidate the Best Use of COOL claim.
+#
+#   mapillary-python-sdk
+#     Not used. This project talks to the Graph API directly because the tile
+#     decomposition needs to be explicit and testable -- see geo.tile_bbox and
+#     the regression tests around the 0.01-degree constraint. Revisit only if
+#     the SDK gains something the direct client lacks.

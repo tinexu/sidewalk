@@ -57,7 +57,7 @@ PYTHONPATH=src python3 -m reachable.cli ingest \
 Tests:
 
 ```bash
-PYTHONPATH=src python3 -m pytest tests/ -q     # 62 tests, no network needed
+PYTHONPATH=src python3 -m pytest tests/ -q     # 65 tests, no network needed
 ```
 
 ## Read the survey output correctly
@@ -151,6 +151,18 @@ signal for Stage 3, so do not drop the raw values.
 
 **Frames without a sequence id are discarded.** A lone frame has no baseline
 partner and cannot contribute to Stage 3, so caching it wastes storage.
+
+**The storage root is resolved once at construction.** On macOS `/var` is a
+symlink to `/private/var`, so a tempfile root arrives as `/var/folders/...`
+while `.resolve()` on any key beneath it yields `/private/var/...`. Storing the
+root unresolved while resolving keys made `relative_to()` raise on every
+listing — the demo crashed on macOS and passed on Linux, which has no such
+symlink. Covered by `test_works_through_a_symlinked_root` and
+`test_full_ingest_through_a_symlinked_root`. Also relevant if `data/` is ever
+symlinked to an external drive.
+
+**Containment uses `is_relative_to`, not `str.startswith`.** The string form
+would accept `/data/cache-evil` against a `/data/cache` root.
 
 **The tiler snaps final edges to the parent bbox.** Repeated float addition
 drifts downward (`0.018 + 0.009 == 0.026999999999999996`), which left an

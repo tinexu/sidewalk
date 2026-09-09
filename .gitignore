@@ -1,1 +1,4 @@
 spec.md
+.venv
+.env
+*/__pycache__
